@@ -1,0 +1,14 @@
+:root {
+    --sec-color: #2F5BEA;
+    --pri-color: #F2F2F2;
+    --alt-text: #7E8085;
+    --border-color: #E7EAEE;
+    --pri-font: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--pri-font);
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}

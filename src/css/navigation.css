@@ -1,0 +1,80 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: var(--pri-color);
+  position: relative;
+}
+.main-nav ul {
+  width: 480px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}
+.main-nav ul li {
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: block;
+}
+.main-nav i {
+  display: none;
+  position: absolute;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.active-nav {
+    font-weight: bold;
+}
+.re-nav {
+  display: none;
+  list-style: none;
+  width: 100%;
+  background: var(--pri-color);
+  position: absolute;
+  top: -100%;
+  transition: 0.3s ease-in-out;
+}
+.re-nav li {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.drop {
+  display: none;
+  list-style: none;
+  width: 100%;
+  background: var(--pri-color);
+  position: absolute;
+  top: unset;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  height: 50%;
+}
+.drop li {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.dropper {
+  border: none;
+}
+@media (max-width: 1024px) {
+  .main-nav i {
+    display: block;
+  }
+  .main-nav ul {
+    display: none;
+  }
+  .re-nav {
+    display: block;
+  }
+  .drop {
+    display: block;
+  }
+}

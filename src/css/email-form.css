@@ -1,0 +1,17 @@
+.email-form {
+  width: 80%;
+  display: flex;
+  margin: 50px auto;
+}
+.email-form input {
+  font-size: 0.75rem;
+  border: none;
+  padding: 0px 20px;
+  outline: none;
+}
+
+.email-btn {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border-radius: 0px 5px 5px 0px;
+}

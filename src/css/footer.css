@@ -1,0 +1,63 @@
+footer {
+  padding: 100px 0px;
+  background: white;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.snow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 36%;
+}
+.fl {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+.foot-list div {
+  font-size: 0.75rem;
+  margin-top: 10px;
+  color: var(--alt-color);
+}
+.foot-text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 100px;
+  padding: 50px 0px;
+}
+.last-foot {
+    background:#F6F8F9;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.last-foot p {
+    font-size: 0.75rem;
+}
+.last-foot img {
+    margin-right: 20px;
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+  footer {
+    padding: 200px 0px;
+  }
+  .foot-text {
+    display: block;
+    position: absolute;
+    right: 30px;
+  }
+  .foot-list {
+    margin-top: 50px;
+  }
+}

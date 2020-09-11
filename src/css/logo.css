@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  width: 170px;
+}
+.logo h1 {
+  font-size: 1.5rem;
+}
+@media (max-height: 1024px) {
+  .logo {
+    margin-left: 40px;
+  }
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+}
