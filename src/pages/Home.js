@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 import EmailForm from "../components/EmailComp";
 import New from "../components/NewBtn";
-import WhiteButton from "../components/WhiteButton";
+import Learn from "../components/Learn";
 import Footer from "../components/Footer";
 
 import "animate.css/animate.min.css";
@@ -30,10 +30,6 @@ import b4 from "../img/b4.png";
 import b5 from "../img/b5.png";
 import oval from "../img/oval.png";
 import d1 from "../img/f1.png";
-import l1 from "../img/l1.png";
-import l2 from "../img/l2.png";
-import l3 from "../img/l3.png";
-import l4 from "../img/l4.png";
 
 const Home = () => {
   useEffect(() => {
@@ -120,25 +116,25 @@ const Home = () => {
               <h2>For Learner</h2>
 
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>Access course materials both online and offline</span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>Personalize their learning schedule and curriculum</span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>Collaborate with other students on the platform</span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Measure their course competency via computer based
                   <br /> {"    "} {"    "}tests and exams
                 </span>
               </div>
-              <New />
+              <New link={"See feature list >>"} />
             </div>
           </div>
         </div>
@@ -151,7 +147,7 @@ const Home = () => {
               <h2>For Instructors</h2>
 
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Create course structures and manage course content for
                   <br />
@@ -159,11 +155,11 @@ const Home = () => {
                 </span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>Schedule Live classes in student’s calendar</span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Interact with students and send notifications of due
                   <br />
@@ -171,12 +167,12 @@ const Home = () => {
                 </span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Monitor students performance on computer based tests
                 </span>
               </div>
-              <New />
+              <New link={"See feature list >>"} />
             </div>
             <img data-aos="fade-down" src={w2} />
           </div>{" "}
@@ -191,7 +187,7 @@ const Home = () => {
               <h2>For Schools</h2>
 
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Create course structures and manage course content for
                   <br />
@@ -199,11 +195,11 @@ const Home = () => {
                 </span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>Schedule Live classes in student’s calendar</span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Interact with students and send notifications of due
                   <br />
@@ -211,12 +207,12 @@ const Home = () => {
                 </span>
               </div>
               <div className="dd">
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 <span>
                   Monitor students performance on computer based tests
                 </span>
               </div>
-              <New />
+              <New link={"See feature list >>"} />
             </div>
           </div>{" "}
         </div>
@@ -281,33 +277,7 @@ const Home = () => {
       </div>
 
       {/* learn section */}
-      <div className="learn">
-        <img className="l1" src={l1} />
-        <img className="l2" src={l2} />
-        <img className="l3" src={l3} />
-        <img className="l4" src={l4} />
-        <div>
-          <h1 className="hd">Want to learn more?</h1>
-          <br />
-          <p
-            style={{
-              color: "white",
-              textTransform: "unset",
-              lineHeight: "25px",
-            }}
-            className="sub-hd"
-          >
-            Edge LMS gives you the tools to supercharge your institution.
-            <br /> We are happy to provide a personalized demo and answer your
-            questions.
-          </p>
-          <br />
-          <div style={{ margin: "0px auto" }}>
-            <WhiteButton />
-          </div>
-        </div>
-      </div>
-
+      <Learn />
       {/* footer section */}
       <Footer />
     </div>

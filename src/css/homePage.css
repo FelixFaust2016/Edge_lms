@@ -5,6 +5,7 @@
   position: relative;
 }
 .banner-text {
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,7 +51,7 @@
 .why-text {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 50px;
   border-bottom: 1px solid var(--border-color);
@@ -63,6 +64,7 @@
 }
 .why-txt-cont {
   width: 250px;
+  margin: 0px auto;
 }
 .why-txt-cont span {
   display: flex;

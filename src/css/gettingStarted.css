@@ -1,0 +1,100 @@
+.gs-banner {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.gs-banner-text {
+  width: 80%;
+}
+.gs-banner-text h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.gs-banner-text p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 20px;
+  color: var(--alt-text);
+}
+.feat {
+  padding: 100px 0px;
+  background: var(--pri-color);
+  position: relative;
+}
+.feat .why-txt-cont {
+  margin-top: 50px;
+}
+.g1,
+.g2,
+.g3 {
+  position: absolute;
+}
+.g1 {
+  left: 20%;
+  top: 5%;
+  width: 10%;
+  z-index: 1;
+}
+.g2 {
+  right: 20%;
+  top: 20%;
+  width: 10%;
+}
+.g3 {
+  left: 22%;
+  top: 3%;
+  width: 10%;
+  z-index: 1;
+}
+.get-img {
+  width: 40%;
+}
+.freq {
+  background: white;
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freq h4 {
+  margin-left: 0;
+  font-size: 0.9rem;
+}
+.freq .why-txt-cont {
+  margin-top: 60px;
+  width: 360px;
+}
+
+.start {
+  padding: 150px 0px;
+  background: var(--pri-color);
+  position: relative;
+}
+.start-text {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+.start-text h4 {
+  font-size: 0.9rem;
+}
+.start-text p {
+  font-size: 0.75rem;
+  color: var(--alt-text);
+}
+@media (max-width: 1000px) {
+  .get-img {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .ha {
+    display: none;
+  }
+}

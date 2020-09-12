@@ -7,11 +7,22 @@
 .logo h1 {
   font-size: 1.5rem;
 }
-@media (max-height: 1024px) {
+@media (max-width: 1024px) {
   .logo {
     margin-left: 40px;
   }
   .logo h1 {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 1024px) {
+  logo {
+    margin-left: 40px;
+  }
+  .logo h1 {
+    font-size: 0.8rem;
+  }
+  .logo img {
+    width: 20%;
   }
 }

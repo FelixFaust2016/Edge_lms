@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import DropDown from "react-dropdown"
 
 import Logo from "../components/Logo";
 import Button from "../components/Button";
+import DropDown from "../components/DropDown";
 
-const options = [
-  'one', 'two', 'three'
-];
+const options = ["one", "two", "three"];
 
 class Navigation extends Component {
   constructor(props) {
@@ -20,16 +18,12 @@ class Navigation extends Component {
           link: "/",
         },
         {
-          name: "getting started",
-          link: "/getting_started",
-        },
-        {
           name: "features",
           link: "/features",
         },
         {
-          name: "Resources",
-          link: "/resources",
+          name: "getting started",
+          link: "/getting_started",
         },
       ],
     };
@@ -49,26 +43,50 @@ class Navigation extends Component {
           <ul>
             {nav.map((nav, i) => (
               <NavLink
+                key={i}
                 style={{ textDecoration: "none", color: "black" }}
                 to={nav.link}
                 activeClassName="active-nav"
               >
-                <li key={i}>{nav.name}</li>
+                <li>{nav.name}</li>
               </NavLink>
             ))}
+            <DropDown />
           </ul>
-          <Button />
+          <NavLink
+            to="/demo"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button />
+          </NavLink>
         </nav>
         <ul className={hide === false ? "re-nav" : "drop"}>
-          {nav.map((nav, i) => (
-            <NavLink
-              style={{ textDecoration: "none", color: "black" }}
-              to={nav.link}
-              activeClassName="active-nav"
-            >
-              <li key={i}>{nav.name}</li>
-            </NavLink>
-          ))}
+          <div>
+            <i
+              style={{
+                top: "20px",
+                left: "20px",
+                position: "fixed",
+                fontSize: "1.5rem",
+                display: hide === false ? "none" : "block",
+              }}
+              onClick={this.handeleHide}
+              className="fas fa-times"
+            ></i>
+            {nav.map((nav, i) => (
+              <NavLink
+                key={i}
+                style={{ textDecoration: "none", color: "black" }}
+                to={nav.link}
+                activeClassName="active-nav"
+              >
+                <li>{nav.name}</li>
+              </NavLink>
+            ))}{" "}
+            <div style={{ margin: "20px auto" }}>
+              <DropDown />
+            </div>
+          </div>
         </ul>
       </>
     );

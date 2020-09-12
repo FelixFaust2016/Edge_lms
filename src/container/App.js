@@ -10,8 +10,10 @@ function App() {
   return (
     <div>
       <Router>
-        <Navigation />
-        <Views />
+        <div style={{ position: "relative" }}>
+          <Navigation />
+          <Views />
+        </div>
       </Router>
     </div>
   );
